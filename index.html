@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milena</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body{background-color:lightblue;}
+        h1{color:blue; font-size: 50px;}
+        #supertitulo{text-align: center;}
+        p{font-size: 20px; text-align: justify;}
+        ul li {margin-bottom:20px;}
+        .imagem{
+            width:200px;
+            height:200px;
+            margin:10px;
+            border:3px solid black;
+            border-radius:8px;
+            background-size:contain;
+        }
+        table{border-collapse: collapse;
+        border: 1px solid black;
+        }
+        th{background-color: lightskyblue;}
+        .link:hover{color: blueviolet;}
+    </style>
+</head>
+<body>
+    
+    <h1 id="supertitulo">Milena Do Espírito Santo Magno</h1>
+    <h2>Biografia</h2>
+    <p>Me chamo Milena, meu apelido é Mya, tenho 27 anos, moro em Aparecida de Goiânia, tenho interesse na área de psicologia e tecnologia. <br>
+    <button onclick="frase()">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+    <h3>Hobbies</h3>
+    <ul>
+        <li>Assistir filmes e séries</li>
+        <li>Ler</li>
+        <li>Caminhar na natureza/parques</li>
+    </ul>
+    <img class="imagem" src="imagens/Parque.PNG">
+    
+    <h4>Países que eu quero visitar</h4>
+    <table border=1>
+        <tr>
+            <th>País</th>
+            <th>Imagem</th>
+        </tr>
+        <tr>
+            <td>Suíça</td>
+            <td>
+            <img class="imagem" src="imagens/Suica.PNG">
+            </td>
+        </tr>
+      <tr>
+            <td>Canadá</td>
+            <td>
+            <img class="imagem" src="imagens/Canadá.PNG">
+            </td>
+        </tr>
+              <tr>
+            <td>Coréia do Sul</td>
+            <td>
+            <img class="imagem" src="imagens/Coréia do Sul.PNG">
+            </td>
+        </tr>
+    </table>
+    <a class="link" href="https://www.primevideo.com/">Link de interesse da Milena</a>
+    </p>
+    <script>
+        function frase(){
+            document.getElementById("mensagem").innerText="Sem saber que era impossível, foi lá e fez.";
+        }
+    </script>
+</body>
+</html>
